@@ -1,0 +1,142 @@
+body{
+  padding: 0;
+  margin: 0;
+  color: rgb(32, 35, 41);
+  font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  background-color: rgb(32, 35, 41);
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 7px;
+  padding: 0;
+}
+#header{
+background-color: rgb(245, 245, 245);
+overflow: hidden;
+}
+.title{
+  font-size: 7vw;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.title_img{
+  margin: auto;
+display: block;
+height: 300px;
+width: auto;
+margin:  0 auto;
+opacity: .8;
+}
+#searchBox{
+  background: #EAEAEA;
+  margin: 10px;
+  border-radius: 10px;
+}
+#containBox{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: white;
+}
+#search{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 60%;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+.containBox>button{
+  border: none;
+  outline: none;
+  font-size: 30px;
+  background: none;
+  cursor: pointer;
+}
+.container{
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-rows: 250px;
+  margin: 100px;
+  grid-gap:100px;
+}
+.item{
+  display: block;
+  background-color: cadetblue;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
+  cursor: pointer;
+}
+.itemImg{
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  height: 250px;
+  width: auto;
+  border-radius: 10px;
+
+}
+.name{
+  display: flex;
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  z-index: 1;
+ justify-content: center;
+ align-items: flex-end;
+ text-align: center;
+}
+.name>h1{
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  background: white;
+  width: 250px;
+  margin-bottom:10px ;
+}
+.data{
+  border-radius: 10px;
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background: white;
+  height: 250px;
+  width: 250px;
+  z-index: 1;
+  font-size: 12px;
+  transition: .5s opacity linear;
+}
+
+.item:hover .data{
+  opacity: 1;
+}
+#openImg{
+  display: block;
+  height: 100vh;
+  width: auto;
+  margin: auto;
+  transition: 3s height;
+}
+footer>img{
+  height: 100px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 700px){
+  .title{
+    font-size: 60px;
+  }
+
+}
